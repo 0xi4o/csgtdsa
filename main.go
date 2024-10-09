@@ -1,8 +1,12 @@
 package main
 
-import "csgtdsa/search"
+import (
+	"csgtdsa/search"
+	"csgtdsa/sort"
+)
 
 func main() {
-	// search.LinearSearch()
+	search.LinearSearch()
 	search.BinarySearch()
+	sort.BubbleSort()
 }
