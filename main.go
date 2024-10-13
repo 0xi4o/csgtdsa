@@ -9,4 +9,6 @@ func main() {
 	search.LinearSearch()
 	search.BinarySearch()
 	sort.BubbleSort()
+	sort.SelectionSort()
+	sort.InsertionSort()
 }
