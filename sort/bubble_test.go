@@ -14,7 +14,7 @@ func TestBubbleSort(t *testing.T) {
 		want  []int
 	}{
 		{
-			name:  "Sort",
+			name:  "BubbleSort",
 			input: nums,
 			want:  []int{3, 8, 12, 14, 19, 25, 28, 36, 40, 45, 50, 54, 61, 67, 73, 79, 82, 88, 91, 96},
 		},
