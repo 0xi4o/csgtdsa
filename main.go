@@ -1,6 +1,7 @@
 package main
 
 import (
+	"csgtdsa/hashtables"
 	"csgtdsa/search"
 	"csgtdsa/sort"
 )
@@ -11,4 +12,5 @@ func main() {
 	sort.BubbleSort()
 	sort.SelectionSort()
 	sort.InsertionSort()
+	hashtables.RunIntersection()
 }
