@@ -1,7 +1,7 @@
 package sort
 
 import (
-	"slices"
+	"csgtdsa/internal/assert"
 	"testing"
 )
 
@@ -24,10 +24,7 @@ func TestInsertionSort(t *testing.T) {
 		t.Run(tt.name, func(t *testing.T) {
 			result := Insertion(tt.input)
 
-			// assert.ComareSlices(t, result, tt.want)
-			if !slices.Equal(result, tt.want) {
-				t.Errorf("expected %v but got %v", tt.want, result)
-			}
+			assert.ComareSlices(t, result, tt.want)
 		})
 	}
 }
