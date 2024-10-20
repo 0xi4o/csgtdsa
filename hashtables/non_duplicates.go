@@ -6,18 +6,18 @@ import (
 	"time"
 )
 
-func FindNonDuplicates() {
+func FindFirstNonDuplicate() {
 	input := "minimum"
 
-	fmt.Println("NonDuplicates:")
+	fmt.Println("FirstNonDuplicate:")
 	fmt.Printf("input: %s\n", input)
 	now := time.Now()
-	result := NonDuplicates(input)
+	result := FirstNonDuplicate(input)
 	fmt.Printf("first non duplicate character: %c\n", result)
 	fmt.Printf("time taken: %v\n\n", time.Since(now))
 }
 
-func NonDuplicates(input string) rune {
+func FirstNonDuplicate(input string) rune {
 	var nonDuplicate rune
 	hashtable := make(map[rune]int)
 

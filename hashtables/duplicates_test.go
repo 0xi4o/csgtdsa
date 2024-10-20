@@ -5,8 +5,8 @@ import (
 	"testing"
 )
 
-func TestFirstNonDuplicate(t *testing.T) {
-	input := "minimum"
+func TestFirstDuplicate(t *testing.T) {
+	input := "abcdcef"
 
 	tests := []struct {
 		name  string
@@ -14,15 +14,15 @@ func TestFirstNonDuplicate(t *testing.T) {
 		want  rune
 	}{
 		{
-			name:  "FirstNonDuplicate",
+			name:  "FirstDuplicate",
 			input: input,
-			want:  'n',
+			want:  'c',
 		},
 	}
 
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
-			result := FirstNonDuplicate(tt.input)
+			result := FirstDuplicate(tt.input)
 
 			assert.Equal(t, result, tt.want)
 		})

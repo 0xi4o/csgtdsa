@@ -13,5 +13,6 @@ func main() {
 	sort.SelectionSort()
 	sort.InsertionSort()
 	hashtables.RunIntersection()
-	hashtables.FindNonDuplicates()
+	hashtables.FindFirstNonDuplicate()
+	hashtables.FindFirstDuplicate()
 }
