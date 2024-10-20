@@ -1,3 +1,4 @@
+// Chapter 8: Exercise 1
 package hashtables
 
 import (
