@@ -13,7 +13,7 @@ func Equal[T comparable](t *testing.T, actual, expected T) {
 	}
 }
 
-func ComareSlices[T any](t *testing.T, actual, expected T) {
+func CompareSlices[T any](t *testing.T, actual, expected T) {
 	t.Helper()
 
 	if !reflect.DeepEqual(actual, expected) {

@@ -24,7 +24,7 @@ func TestBubbleSort(t *testing.T) {
 		t.Run(tt.name, func(t *testing.T) {
 			result := Bubble(tt.input)
 
-			assert.ComareSlices(t, result, tt.want)
+			assert.CompareSlices(t, result, tt.want)
 		})
 	}
 }
